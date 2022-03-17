@@ -1,5 +1,7 @@
 # react-native-step-indicator
 
+Forked from [react-native-step-indicator](https://www.npmjs.com/package/react-native-step-indicator)
+
 A simple react-native implementation of step indicator widget compatible with the ViewPager and ListView.
 
 Features
@@ -89,8 +91,8 @@ onPageChange(position){
 | ```customStyles``` | Object  | Custom styling | {}
 | ```labels``` | Array  | Labels for each step | null
 | `onPress` | Function (position: Number) | Function called when a step is pressed | null
-| `renderStepIndicator` | Function (position: Number, stepStatus: String) | Use this to render custom content inside step | null 
-| `renderLabel` | Function (position: Number, stepStatus: String, label: String, currentPosition: Number) | Use this to render custom label for each step | null 
+| `renderStepIndicator` | Function (position: Number, stepStatus: String) | Use this to render custom content inside step | null
+| `renderLabel` | Function (position: Number, stepStatus: String, label: String, currentPosition: Number) | Use this to render custom label for each step | null
 
 ### Custom Styles
 

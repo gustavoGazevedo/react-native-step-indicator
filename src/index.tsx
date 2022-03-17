@@ -347,8 +347,8 @@ const StepIndicator = ({
           backgroundColor: customStyles.stepIndicatorUnFinishedColor,
           borderWidth: customStyles.stepStrokeWidth,
           borderColor: customStyles.stepStrokeUnFinishedColor,
-          height: staleSizeAnim,
-          width: staleSizeAnim,
+          height: sizeAnim,
+          width: sizeAnim,
           borderRadius: customStyles.stepIndicatorSize / 2,
           overflow: 'hidden',
         };
@@ -391,7 +391,7 @@ const StepIndicator = ({
       position = stepCount - 1;
     }
     const animateToPosition = (progressBarSize / (stepCount - 1)) * position;
-    sizeAnim.setValue(customStyles.stepIndicatorSize);
+    sizeAnim.setValue(customStyles.currentStepIndicatorSize);
     staleSizeAnim.setValue(customStyles.stepIndicatorSize);
     borderRadiusAnim.setValue(customStyles.stepIndicatorSize / 2);
     Animated.sequence([

@@ -1,7 +1,7 @@
 {
-  "name": "react-native-step-indicator",
-  "version": "1.0.3",
-  "description": "A simple react-native implementation of a step indicator widget compatible with ViewPager and Flatlist",
+  "name": "@gustavo_azevedo/react-native-step-indicator",
+  "version": "1.0.1",
+  "description": "Small modification of the original for cosmetics",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -37,13 +37,16 @@
     "scrollview",
     "listview"
   ],
-  "repository": "https://github.com/24ark/react-native-step-indicator",
-  "author": "Arkit Vora <arkitvora123@gmail.com> (https://github.com/24ark)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoGazevedo/react-native-step-indicator.git"
+  },
+  "author": "Gustavo Azevedo (https://github.com/gustavoGazevedo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/24ark/react-native-step-indicator/issues"
+    "url": "https://github.com/gustavoGazevedo/react-native-step-indicator/issues"
   },
-  "homepage": "https://github.com/24ark/react-native-step-indicator#readme",
+  "homepage": "https://github.com/gustavoGazevedo/react-native-step-indicator#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.14.5",
@@ -78,8 +81,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS --no-verify",
+      "pre-commit": "yarn lint --no-verify && yarn typescript  --no-verify"
     }
   },
   "eslintConfig": {
